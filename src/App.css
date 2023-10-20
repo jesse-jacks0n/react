@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+.navbar{
+  background-color: #61dafb;
+  padding: 5px;
+}
+.homepage{
+  background-color: #ececec;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: grid;
+  grid-template-columns: 0.9fr 4fr 1.4fr; /* 3 equal columns */
+  width: 100%;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* You can also style the individual components if needed */
+.side-panel {
+  background-color: #ffffff;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-panel {
+  background-color: #F6F9FF;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+}
+
+.activity-panel {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.logo-container {
+  display: flex; /* Use flexbox to arrange children side by side */
+  align-items: center; /* Center children vertically */
+}
+
+.logo-background {
+  width: 30px; /* Set the width of the circular background */
+  height: 30px; /* Set the height of the circular background */
+  background-color: #0074d9; /* Background color for the circular background */
+  border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+  display: flex; /* Use flexbox to center content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.logo {
+  font-size: 18px; /* Set the font size for the "C" */
+  color: #fff; /* Text color */
+}
+
+.logo-name {
+  font-size: 18px; /* Set the font size for the "CLOUDY" text */
+  margin-left: 10px; /* Add some margin to separate the logo and text */
+  color: #0074d9; /* Text color */
+}
+.add-file{
+  margin-top: 20px;
+  background-color:#F6F9FF ;
+  padding-left: 10px;
   display: flex;
-  flex-direction: column;
+  border-radius: 0.5rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.file-add-icon{
+  width: 40px; /* Set the width of the circular background */
+  height: 40px; /* Set the height of the circular background */
+  background-color: #0074d9; /* Background color for the circular background */
+  border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+  display: flex; /* Use flexbox to center content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; 
+  margin-left: 10px;
+  border:  1px solid rgb(243, 248, 255);
+  box-shadow: 1px 5px 8px #DBD8FE;
+}
+.add{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
