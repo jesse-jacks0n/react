@@ -1,165 +1,491 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-*{
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
+
+* {
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-.navbar{
-  background-color: #61dafb;
-  padding: 5px;
+
+.navbar {
+    background-color: #61dafb;
+    padding: 5px;
 }
-.homepage{
-  background-color: #ececec;
+
+.homepage {
+    background-color: #ececec;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 0.9fr 4fr 1.4fr; /* 3 equal columns */
-  width: 100%;
-  height: 100vh;
+    display: grid;
+    grid-template-columns: 0.9fr 4fr 1.4fr; /* 3 equal columns */
+    width: 100%;
+
 }
 
 /* You can also style the individual components if needed */
 .side-panel {
-  background-color: #ffffff;
-  padding: 10px;
+    background-color: #ffffff;
+    padding: 10px;
 }
 
 .main-panel {
-  background-color: #f1f6ff;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius:1rem;
+    background-color: #f1f6ff;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 1rem;
 }
 
 .activity-panel {
-  background-color: #ffffff;
-  padding: 10px;
+    background-color: #ffffff;
+    margin: 20px 20px;
 }
 
 .logo-container {
-  display: flex; /* Use flexbox to arrange children side by side */
-  align-items: center; /* Center children vertically */
+    display: flex; /* Use flexbox to arrange children side by side */
+    align-items: center; /* Center children vertically */
 }
 
 .logo-background {
-  width: 30px; /* Set the width of the circular background */
-  height: 30px; /* Set the height of the circular background */
-  background-color: #0074d9; /* Background color for the circular background */
-  border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
-  display: flex; /* Use flexbox to center content */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
+    width: 30px; /* Set the width of the circular background */
+    height: 30px; /* Set the height of the circular background */
+    background-color: #0074d9; /* Background color for the circular background */
+    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
 }
 
 .logo {
-  font-size: 18px; /* Set the font size for the "C" */
-  color: #fff; /* Text color */
+    font-size: 18px; /* Set the font size for the "C" */
+    color: #fff; /* Text color */
 }
 
 .logo-name {
-  font-size: 18px; /* Set the font size for the "CLOUDY" text */
-  margin-left: 10px; /* Add some margin to separate the logo and text */
-  color: #0074d9; /* Text color */
+    font-size: 18px; /* Set the font size for the "CLOUDY" text */
+    margin-left: 10px; /* Add some margin to separate the logo and text */
+    color: #0074d9; /* Text color */
 }
-.add-file{
-  margin-top: 10px;
-  background-color:#edf4ff ;
-  padding-left: 10px;
-  display: flex;
-  border-radius: 1rem;
-  align-items: center;
-  justify-content: space-between;
+
+.add-file {
+    margin-top: 5px;
+    background-color: #edf4ff;
+    padding-left: 10px;
+    display: flex;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
 }
-.file-add-icon{
-  width: 40px; /* Set the width of the circular background */
-  height: 40px; /* Set the height of the circular background */
-  background-color: #0074d9; /* Background color for the circular background */
-  border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
-  display: flex; /* Use flexbox to center content */
-  align-items: center; /* Center content vertically */
-  justify-content: center; 
-  margin-right: 10px;
-  border:  1px solid rgb(243, 248, 255);
-  box-shadow: 1px 5px 8px #DBD8FE;
+
+.add-file img {
+    width: 35px;
+    margin-right: 10px;
 }
-.add{
-  color: white;
-}
-hr{
-  margin-top: 20px;
-  border-color: #fbfaff;
-  border-width: 0.5px;
+
+hr {
+    margin-top: 20px;
+    border-color: #fbfaff;
+    border-width: 1px;
 }
 
 .button-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
 }
 
 button {
-  margin-top: 10px;
-  background-color: #ffffff;
-  color: #000000;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 
 button.active {
-  background-color: #edf4ff;
-  color: #0074d9;
-  font-weight: 600;
-  border-radius: 8px;
+    background-color: #edf4ff;
+    color: #0074d9;
+    font-weight: 600;
+    border-radius: 8px;
 }
 
-.storage-analytics p{
-  color: #167dd1;
-  font-size: 13px;
+.storage-analytics p {
+    color: #167dd1;
+    font-size: 13px;
 }
-span{
-  font-weight: 700;
-  color: #0267c0;
+
+span {
+    font-weight: 700;
+    color: #5A6D93;
 }
-.storage-progress{
-  height: 10px;
-  background-color:#e1e7f0 ;
-  border-radius: 20px;
+
+.storage-progress {
+    height: 10px;
+    background-color: #e1e7f0;
+    border-radius: 20px;
 }
-.storage-progress-value{
-  height: 100%;
-  width: 80%;
-  background-color: #F85E83;
-  border-radius: 20px;
+
+.storage-progress-value {
+    height: 100%;
+    width: 80%;
+    background-color: #ff7da1;
+    border-radius: 20px;
 }
-.devider{
-  margin-top: 20px;
-  height: 1px;
-  background-color: #e4e4e4;
+
+.divider {
+    margin-top: 20px;
+    height: 1px;
+    background-color: rgba(241, 241, 241, 0.82);
 }
-.upgrade-container{
-  margin-top: 20px;
-  background-color: #edf4ff ;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+.upgrade-container {
+    margin-top: 20px;
+    background-color: #edf4ff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.folder-image{
-  padding: 5px;
-  width: 40px;
+
+.folder-image {
+    padding: 5px;
+    width: 40px;
 }
-.upgrade-container p{
-  color: #167dd1;
-  font-size: 13px;
-  text-align: center;
+
+.upgrade-container p {
+    color: #167dd1;
+    font-size: 13px;
+    text-align: center;
 }
-.premium-button{
-  margin:10px 5px;
-  border-radius: 10px;
-  color: #ffffff;
-  font-weight: 400;
-  background-color: #097fe6;
+
+.premium-button {
+    margin: 10px 5px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: #097fe6;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.notification {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(176, 176, 176);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification img {
+    width: 25px;
+}
+
+.profile-avatar {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(176, 176, 176);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-avatar img {
+    width: 25px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info p {
+    padding-left: 10px;
+    color: #92d7e8;
+    font-size: 12px;
+}
+
+.name {
+    color: #0074d9;
+}
+
+.email {
+    color: #92d7e8;
+    font-size: 12px;
+}
+
+.activity {
+    color: #5A6D93;
+    font-weight: 600;
+}
+
+.activity-container {
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px #edebff;
+}
+
+.activity-date-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activity-date-data {
+    font-size: 14px;
+}
+
+.activity-date-data p {
+    font-size: 13px;
+    color: #9d99bc;
+}
+
+.date-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ababab;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-icon img {
+    width: 20px;
+
+}
+
+.graph-statistics {
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.day-holder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.date-day {
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
+}
+
+.monday,.tuesday,.wednesday,.thursday,.friday,.saturday,.sunday{
+    background-color: #c5f3ff;
+    width: 100%;
+    border-radius: 5px;
+    cursor: default; /* Set the default cursor */
+    transition: height 0.3s;
+
+    &::before {
+        position: absolute;
+        top: 20px; /* Adjust the distance above the div */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(51, 51, 51, 0.63);
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        opacity: 0; /* Initially hidden */
+        pointer-events: none; /* Ensure the tooltip doesn't interfere with mouse events */
+        transition: opacity 0.3s; /* Add a fade-in transition for the tooltip */
+    }
+
+    &:hover::before {
+        opacity: 1; /* Show the tooltip on hover */
+    }
+}
+.monday{
+    height: 35%;
+    &::before {
+        content: '35%';
+    }
+
+}
+.tuesday{
+    height: 70%;
+    &::before {
+        content: '70%';
+    }
+}
+.wednesday{
+    height: 55%;
+    &::before {
+        content: '55%';
+    }
+}
+.thursday{
+    height: 88%;
+    background-color: #2086df;
+    &::before {
+        content: '88%';
+    }
+}
+.friday{
+    height: 65%;
+    &::before {
+        content: '65%';
+    }
+}
+.saturday{
+    height: 43%;
+    &::before {
+        content: '43%';
+    }
+}
+.sunday{
+    height: 55%;
+    &::before {
+        content: '55%';
+    }
+}
+
+
+.ingress-engress-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 3 equal columns */
+    width: 100%;
+}
+
+.engress, .ingress, .cloud-one, .cloud-two {
+    display: flex;
+    align-items: center;
+    color: #9d99bc;
+    font-size: 12px;
+}
+
+.upload, .download, .cloud-one-icon, .cloud-two-icon {
+    margin: 1px 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.upload, .download {
+    background-color: #FFD9E3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload img {
+    width: 25px;
+}
+
+.download {
+    background-color: #e9efff;
+}
+
+.download img {
+    width: 25px;
+}
+
+.cloud-one, .cloud-two {
+    font-size: 13px;
+}
+
+.cloud-one-icon {
+    background-color: #F2F6FE;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.cloud-two-icon {
+    background-color: #F3F6FE;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.shared-cloud-container {
+    border: 2px solid #ECF3FB;
+    padding: 5px;
+    border-radius: 1rem;
+}
+
+.shared-cloud {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shared-cloud p {
+    color: #73ceef;
+    font-weight: 600;
+}
+
+/*dashboard*/
+.dashboard {
+    padding: 30px;
+}
+
+.search-bar {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.search-bar-icon {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar p {
+    margin-left: 10px;
+    color: #9CA9C7;
+}
+
+.search-bar img {
+    margin-left: 10px;
+    width: 30px;
+}
+
+.filter-action {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.vertical-bar {
+    width: 2px;
+    height: 25px;
+    background-color: #DBD8FE;
+
+}
+
+.button-image {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button-image img:active {
+    color: #0074d9;
+}
+
+button img {
+    align-items: center;
+    justify-content: center;
+    width: 20px;
 }

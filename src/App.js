@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import "./App.css";
-import ActivityPanel from "./components/activitypanel";
-import MainPanel from "./components/mainpanel";
-import SidePanel from "./components/sidepanel";
+import ActivityPanel from "./layout/activitypanel";
+import MainPanel from "./layout/mainpanel";
+import SidePanel from "./layout/sidepanel";
 
 function App() {
   const [activeButton, setActiveButton] = useState('dashboard');

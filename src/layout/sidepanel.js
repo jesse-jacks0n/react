@@ -10,20 +10,26 @@ export default function SidePanel({ activeButton, handleButtonClick }) {
         <button
           className={activeButton === "dashboard" ? "active" : ""}
           onClick={() => handleButtonClick("dashboard")}
-        >
-          Dashboard
+        ><div className={"button-image"}>
+            <img src={"/images/layout.png"} alt={"icon"}/>
+            Dashboard
+        </div>
         </button>
         <button
           className={activeButton === "myFiles" ? "active" : ""}
           onClick={() => handleButtonClick("myFiles")}
-        >
-          My Files
+        ><div className={"button-image"}>
+            <img src={"/images/folder2.png"} alt={"icon"}/>
+            My Files
+        </div>
         </button>
         <button
           className={activeButton === "settings" ? "active" : ""}
           onClick={() => handleButtonClick("settings")}
-        >
-          Settings
+        ><div className={"button-image"}>
+            <img src={"/images/settings.png"} alt={"icon"}/>
+            Settings
+        </div>
         </button>
       </div>
 
@@ -52,9 +58,7 @@ function AddFile() {
         Add
         <br /> New File
       </p>
-      <div className="file-add-icon">
-        <p className="add">+</p>
-      </div>
+        <img src={"/images/add.png"} alt={"icon"}/>
     </div>
   );
 }
@@ -73,7 +77,7 @@ function FileStorage() {
   );
 }
 function Devider() {
-  return <div className="devider"></div>;
+  return <div className="divider"></div>;
 }
 function UpgradeContainer() {
   return (

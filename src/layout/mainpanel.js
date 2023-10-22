@@ -1,7 +1,7 @@
 import React from 'react';
-import DashboardContent from './dashboardContent';
-import MyFilesContent from './myFilesContent';
-import SettingsContent from './settingsContent';
+import DashboardContent from '../components/dashboardContent';
+import MyFilesContent from '../components/myFilesContent';
+import SettingsContent from '../components/settingsContent';
 
 export default function MainPanel({ activeButton }) {
   let content;
