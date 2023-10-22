@@ -61,7 +61,7 @@
 }
 
 .logo-name {
-    font-size: 18px; /* Set the font size for the "CLOUDY" text */
+    font-size: 16px; /* Set the font size for the "CLOUDY" text */
     margin-left: 10px; /* Add some margin to separate the logo and text */
     color: #0074d9; /* Text color */
 }
@@ -74,11 +74,13 @@
     border-radius: 1rem;
     align-items: center;
     justify-content: space-between;
+    font-size: 15px;
 }
 
 .add-file img {
     width: 35px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 hr {
@@ -100,6 +102,10 @@ button {
     border: none;
     padding: 10px;
     cursor: pointer;
+    &:hover{
+        background: #DBD8FE;
+        border-radius: 10px;
+    }
 }
 
 button.active {
@@ -370,6 +376,7 @@ span {
     align-items: center;
     color: #9d99bc;
     font-size: 12px;
+
 }
 
 .upload, .download, .cloud-one-icon, .cloud-two-icon {
@@ -384,20 +391,16 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-.upload img {
-    width: 25px;
+.upload img,.download img  {
+    width: 20px;
 }
 
 .download {
     background-color: #e9efff;
 }
-
-.download img {
-    width: 25px;
-}
-
 .cloud-one, .cloud-two {
     font-size: 13px;
 }
@@ -429,6 +432,7 @@ span {
 .shared-cloud p {
     color: #73ceef;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /*dashboard*/
@@ -488,4 +492,72 @@ button img {
     align-items: center;
     justify-content: center;
     width: 20px;
+}
+
+.grid-parent-container {
+    margin-top: 20px;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 6fr 4fr; /* Use fr units */
+    gap: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Adjust the gap between grid items */
+}
+
+.grid-item {
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover{
+        background-color: #DBD8FE;
+    }
+}
+.grid-item img{
+    width: 30px;
+    margin-right: 10px;
+}
+.grid-item-image{
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+    font-size: 15px;
+}
+.grid-item h3{
+    margin-right: 20px;
+    color: #414e68;
+    font-weight: 400;
+}
+
+.visitors-container {
+    background-color: white;
+    border-radius: 1rem;
+}
+.quick-access {
+   margin-top: 20px;
+}
+
+.quick-access h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.quick-access-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 10px; /* Adjust the gap between grid items */
+    margin-top: 20px;
+}
+
+.quick-access-grid-item {
+    background-color: #ffffff;
+    height: 150px; /* Set the desired height */
+   border-radius: 1rem;
 }
