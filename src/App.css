@@ -15,10 +15,10 @@
 }
 
 .container {
+    margin: auto;
     display: grid;
     grid-template-columns: 0.9fr 4fr 1.4fr; /* 3 equal columns */
-    width: 100%;
-
+    width: 1300px;
 }
 
 /* You can also style the individual components if needed */
@@ -102,7 +102,8 @@ button {
     border: none;
     padding: 10px;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         background: #DBD8FE;
         border-radius: 10px;
     }
@@ -293,7 +294,7 @@ span {
     margin-top: 5px;
 }
 
-.monday,.tuesday,.wednesday,.thursday,.friday,.saturday,.sunday{
+.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
     background-color: #c5f3ff;
     width: 100%;
     border-radius: 5px;
@@ -318,46 +319,60 @@ span {
         opacity: 1; /* Show the tooltip on hover */
     }
 }
-.monday{
+
+.monday {
     height: 35%;
+
     &::before {
         content: '35%';
     }
 
 }
-.tuesday{
+
+.tuesday {
     height: 70%;
+
     &::before {
         content: '70%';
     }
 }
-.wednesday{
+
+.wednesday {
     height: 55%;
+
     &::before {
         content: '55%';
     }
 }
-.thursday{
+
+.thursday {
     height: 88%;
     background-color: #2086df;
+
     &::before {
         content: '88%';
     }
 }
-.friday{
+
+.friday {
     height: 65%;
+
     &::before {
         content: '65%';
     }
 }
-.saturday{
+
+.saturday {
     height: 43%;
+
     &::before {
         content: '43%';
     }
 }
-.sunday{
+
+.sunday {
     height: 55%;
+
     &::before {
         content: '55%';
     }
@@ -394,13 +409,14 @@ span {
     cursor: pointer;
 }
 
-.upload img,.download img  {
+.upload img, .download img {
     width: 20px;
 }
 
 .download {
     background-color: #e9efff;
 }
+
 .cloud-one, .cloud-two {
     font-size: 13px;
 }
@@ -516,21 +532,25 @@ button img {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         background-color: #DBD8FE;
     }
 }
-.grid-item img{
+
+.grid-item img {
     width: 30px;
     margin-right: 10px;
 }
-.grid-item-image{
+
+.grid-item-image {
     display: flex;
     margin-left: 15px;
     align-items: center;
     font-size: 15px;
 }
-.grid-item h3{
+
+.grid-item h3 {
     margin-right: 20px;
     color: #414e68;
     font-weight: 400;
@@ -540,8 +560,9 @@ button img {
     background-color: white;
     border-radius: 1rem;
 }
+
 .quick-access {
-   margin-top: 20px;
+    margin-top: 20px;
 }
 
 .quick-access h1 {
@@ -559,5 +580,39 @@ button img {
 .quick-access-grid-item {
     background-color: #ffffff;
     height: 150px; /* Set the desired height */
-   border-radius: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px #edebff;
+}
+
+.quick-access-grid-item img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.image-container1, .image-container2, .image-container3 {
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.image-container1 {
+    background-image: url("/public/images/picture1.jpg");
+}
+
+.image-container2 {
+    background-image: url("/public/images/picture2.jpg");
+}
+
+.image-container3 {
+    background-image: url("/public/images/picture3.jpg");
+}
+
+.quick-access-grid-item-content1, .quick-access-grid-item-content2, .quick-access-grid-item-content3 {
+    background-color: #ffffff;
+    display: flex;
+   padding: 10px;
+    align-items: center;
+    height: 30%;
+    border-radius: 0 0 1rem 1rem;
 }

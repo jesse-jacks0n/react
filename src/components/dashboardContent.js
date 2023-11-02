@@ -1,4 +1,5 @@
 import React from 'react';
+import SmoothGraph from "../widgets/smoothGraph";
 
 export default function DashboardContent() {
     return <div className={"dashboard"}>
@@ -30,13 +31,35 @@ export default function DashboardContent() {
                 </div>
             </div>
             <div className="visitors-container"></div>
+            {/*<SmoothGraph />*/}
         </div>
         <div className={"quick-access"}>
             <h1>Quick Access</h1>
             <div className={"quick-access-grid-container"}>
-                <div className={"quick-access-grid-item"}></div>
-                <div className={"quick-access-grid-item"}></div>
-                <div className={"quick-access-grid-item"}></div>
+                <div className={"quick-access-grid-item"}>
+                    <div className={"image-container1"}></div>
+                    <div className={"quick-access-grid-item-content1"}>
+                        <img src={"/images/picture.png"}/>
+                        <span>Kernam Pool</span>
+                        .jpg
+                    </div>
+                </div>
+                <div className={"quick-access-grid-item"}>
+                    <div className={"image-container2"}></div>
+                    <div className={"quick-access-grid-item-content2"}>
+                        <img src={"/images/play.png"}/>
+                        <span>Amazing Pool</span>
+                        .jpg
+                    </div>
+                </div>
+                <div className={"quick-access-grid-item"}>
+                    <div className={"image-container3"}></div>
+                    <div className={"quick-access-grid-item-content3"}>
+                        <img src={"/images/docs.png"}/>
+                        <span>Family Pool</span>
+                        .jpg
+                    </div>
+                </div>
             </div>
         </div>
 
